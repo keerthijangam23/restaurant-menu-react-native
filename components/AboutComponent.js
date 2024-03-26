@@ -58,6 +58,7 @@ export default function AboutComponent() {
 const styles = StyleSheet.create({
   container: {
     marginTop: 70,
+    marginBottom: -280,
     flex: 1,
   },
   resImage: {

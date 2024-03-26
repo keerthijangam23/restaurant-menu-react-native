@@ -1,5 +1,9 @@
 import { View, Text, Modal, Button, StyleSheet } from "react-native";
-export default function TimingModel({ isModelVisible, setIsModalVisible }) {
+type TimingModelProps ={
+  isModelVisible:boolean,
+  setIsModalVisible:React.Dispatch<React.SetStateAction<boolean>>
+}
+export default function TimingModel({ isModelVisible, setIsModalVisible }:TimingModelProps) {
   return (
     <Modal
       animationType="slide"

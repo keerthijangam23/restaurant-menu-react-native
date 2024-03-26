@@ -16,12 +16,12 @@ const resturantImage = require("../assets/restaurant.jpeg");
 const logoImage = require("../assets/logoo.png");
 
 export default function AboutComponent() {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   return (
     <ScrollView style={styles.container}>
       <ImageBackground source={resturantImage} style={styles.resImage}>
         <Text style={styles.header}>
-          <MaterialIcons name="error" /> WE ARE NOW OPEN FOR INDOOR DINING !
+          <MaterialIcons name="error" size={16}/> WE ARE NOW OPEN FOR INDOOR DINING !
         </Text>
         <View style={styles.name}>
           <Image source={logoImage} style={styles.logoo} />
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     backgroundColor: "brown",
     paddingLeft: 40,
     color: "white",
+    padding:10
   },
   name: {
     width: "70%",

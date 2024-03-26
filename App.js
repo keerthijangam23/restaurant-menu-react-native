@@ -1,20 +1,21 @@
-import { ScrollView } from "react-native";
+import { ScrollView, View } from "react-native";
 import AboutComponent from "./components/AboutComponent";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import AppetizersList from "./components/AppetizersList";
+import MainEntreesList from "./components/MainEntreesList";
+import DessertsList from "./components/DessertsList";
 
 const Tab = createMaterialTopTabNavigator();
 export default function App() {
   return (
-    <ScrollView>
+    <NavigationContainer>
       <AboutComponent />
-      <NavigationContainer>
-        <Tab.Navigator>
-          <Tab.Screen name="Appetizers" />
-          <Tab.Screen name="Main Entrees"/>
-          <Tab.Screen name="Desserts"/>
-        </Tab.Navigator>
-      </NavigationContainer>
-    </ScrollView>
+      <Tab.Navigator>
+        <Tab.Screen name="Appetizers" component={AppetizersList} />
+        <Tab.Screen name="Main Entrees" component={MainEntreesList} />
+        <Tab.Screen name="Desserts" component={DessertsList} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 }

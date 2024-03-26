@@ -1,8 +1,8 @@
 export const Appetizers = [
   {
     title: "APPETIZERS",
-    data: {
-      item: "DAY BOAT SCALLOPS",
+    about: {
+      itemName: "DAY BOAT SCALLOPS",
       description: "fennel, prosciutto, black sauce",
       price: "$14",
       Diet: "Dietary Information",
@@ -10,8 +10,8 @@ export const Appetizers = [
   },
   {
     title: "APPETIZERS",
-    data: {
-      item: "DEVILS ON HORSEBACK",
+    about: {
+      itemName: "DEVILS ON HORSEBACK",
 
       description: "bacon wrapped dates stuffed with feta, balsamic reduction",
 

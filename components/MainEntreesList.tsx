@@ -25,17 +25,24 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingRight: 60,
     marginBottom: 20,
-    marginRight: 60,
+    width: 350,
+    height: 150,
   },
   diet: {
     textDecorationLine: "underline",
   },
+  price: {
+    width: 200,
+  },
   itemImage: {
-    width: 60,
-    height: 60,
-    margin: 10,
+    width: 100,
+    height: 100,
+    marginRight: 10,
+    borderRadius: 10,
+  },
+  innerContainer: {
+    width: 180,
   },
 });
 
@@ -47,13 +54,15 @@ const MainEntreesList = () => {
         data={MainEntrees}
         renderItem={({ item }) => (
           <View style={styles.menu}>
-            <Image style={styles.itemImage} source={item.about.itemImage} />
-            <View>
+            {item.about.itemImage && (
+              <Image style={styles.itemImage} source={item.about.itemImage} />
+            )}
+            <View style={styles.innerContainer}>
               <Text style={styles.item}>{item.about.itemName}</Text>
               <Text style={styles.description}>{item.about.description}</Text>
               <Text style={styles.diet}>{item.about.Diet}</Text>
             </View>
-            <Text>{item.about.price}</Text>
+            <Text style={styles.price}>{item.about.price}</Text>
           </View>
         )}
       />

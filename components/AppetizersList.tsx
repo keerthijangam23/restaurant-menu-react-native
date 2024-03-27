@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
     padding: 20,
-    flex:1
+    flex: 1,
   },
   header: {
     alignSelf: "center",
@@ -22,27 +22,26 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
   },
   menu: {
-    display:"flex",
+    display: "flex",
     flexDirection: "row",
-    justifyContent:"space-between",
-    paddingRight: 50,
-    margin: 20,
-    marginRight:40
-    
+    justifyContent: "space-between",
+    paddingRight: 60,
+    marginBottom: 20,
+    marginRight: 60,
   },
-  caption:{
-    alignSelf:"center",
-    fontStyle:"italic",
-    paddingBottom:10
+  caption: {
+    alignSelf: "center",
+    fontStyle: "italic",
+    paddingBottom: 10,
   },
-  diet:{
-    textDecorationLine: 'underline',
+  diet: {
+    textDecorationLine: "underline",
   },
   itemImage: {
-    width: 40,
-    height: 40,
-    backgroundColor: "red",
-    margin:10
+    width: 60,
+    height: 60,
+
+    margin: 10,
   },
 });
 

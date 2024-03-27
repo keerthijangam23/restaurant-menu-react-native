@@ -24,18 +24,18 @@ const styles = StyleSheet.create({
   menu: {
     display: "flex",
     flexDirection: "row",
-  justifyContent:"space-between",
-    paddingRight: 50,
-    margin: 20,
-    marginRight: 40,
+    justifyContent: "space-between",
+    paddingRight: 60,
+    marginBottom: 20,
+    marginRight: 60,
   },
   diet: {
     textDecorationLine: "underline",
   },
   itemImage: {
-    width: 40,
-    height: 40,
-    backgroundColor: "red",
+    width: 60,
+    height: 60,
+
     margin: 10,
   },
 });

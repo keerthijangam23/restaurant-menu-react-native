@@ -6,7 +6,7 @@ export const MainEntrees = [
       description: "quinona, oyster mushrooms, brussels sprout leaves",
       price: "$26",
       Diet: "Dietary Information",
-      itemImage: require("../assets/GRILLED FAROE ISLAND SALMON.png"),
+      itemImage: require("../assets/1.jpeg"),
     },
   },
   {
@@ -16,6 +16,7 @@ export const MainEntrees = [
       description: "herbed farro, orange-frisee salad, honey gastrique",
       price: "$29",
       Diet: "Dietary Information",
+      itemImage: require("../assets/2.jpg"),
     },
   },
   {
@@ -29,6 +30,7 @@ export const MainEntrees = [
       price: "$36",
 
       Diet: "Dietary Information",
+      itemImage: require("../assets/3.jpeg"),
     },
   },
   {
@@ -38,6 +40,7 @@ export const MainEntrees = [
       description: "garlic and herb sausage, duck confit, cannellini beans",
       price: "$19",
       Diet: "Dietary Information",
+      itemImage: require("../assets/4.jpg"),
     },
   },
   {
@@ -50,6 +53,7 @@ export const MainEntrees = [
 
       price: "$48",
       Diet: "Dietary Information",
+      itemImage: require("../assets/5.jpg"),
     },
   },
   {
@@ -61,6 +65,7 @@ export const MainEntrees = [
 
       price: "$28",
       Diet: "Dietary Information",
+      itemImage: require("../assets/6.jpg"),
     },
   },
   {
@@ -73,6 +78,7 @@ export const MainEntrees = [
 
       price: "$26",
       Diet: "Dietary Information",
+      itemImage: require("../assets/7.jpg"),
     },
   },
   {
@@ -82,6 +88,7 @@ export const MainEntrees = [
       description: "green lentils, chanterelle mushrooms, Waldoboro turnip",
       price: "$25",
       Diet: "Dietary Information",
+      itemImage: require("../assets/8.jpg"),
     },
   },
 ];

@@ -6,7 +6,7 @@ export const Desserts = [
       description: "Strawberry compote, Strawberry balsamic",
       price: "$9",
       Diet: "Dietary Information",
-      itemImage: require("../assets/GRILLED FAROE ISLAND SALMON.png"),
+      itemImage: require("../assets/11.jpg"),
     },
   },
   {
@@ -16,6 +16,7 @@ export const Desserts = [
       description: "Chantilly cream & wafer cookies",
       price: "$8",
       Diet: "Dietary Information",
+      itemImage: require("../assets/12.jpg"),
     },
   },
   {
@@ -25,6 +26,7 @@ export const Desserts = [
       description: "Blood orange sherbet",
       price: "$9",
       Diet: "Dietary Information",
+      itemImage: require("../assets/13.jpg"),
     },
   },
   {
@@ -35,6 +37,7 @@ export const Desserts = [
         "Made with carrot, pineapple, coconuts, and raisins, with cream cheese frosting",
       price: "$6",
       Diet: "Dietary Information",
+      itemImage: require("../assets/14.jpg"),
     },
   },
   {
@@ -45,6 +48,8 @@ export const Desserts = [
         "Fresh mixed berries served in a white chocolate merinque basket with a passion fruit anglaise",
       price: "$7",
       Diet: "Dietary Information",
+      itemImage: require("../assets/15.jpg"),
+      
     },
   },
   {
@@ -55,6 +60,7 @@ export const Desserts = [
         "Coconut semifreddo, raspberry whipped creme franche, honey tuile & raspberry reduction",
       price: "$8",
       Diet: "Dietary Information",
+      itemImage: require("../assets/16.jpg"),
     },
   },
 ];

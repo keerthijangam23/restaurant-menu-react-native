@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
   itemImage: {
     width: 60,
     height: 60,
-
     margin: 10,
   },
 });

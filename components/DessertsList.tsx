@@ -22,8 +22,21 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
   },
   menu: {
-    flexWrap: "wrap",
-    flexDirection: "column",
+    display:"flex",
+    flexDirection: "row",
+    justifyContent:"space-between",
+    paddingRight: 50,
+    margin: 30,
+    marginRight:40
+  },
+  diet:{
+    textDecorationLine: 'underline',
+  },
+  itemImage: {
+    width: 40,
+    height: 40,
+    backgroundColor: "red",
+    margin:10
   },
 });
 
@@ -35,10 +48,11 @@ const DessertsList = () => {
         data={Desserts}
         renderItem={({ item }) => (
           <View style={styles.menu}>
-            <View>
+            <Image style={styles.itemImage} source={item.about.itemImage} />
+            <View >
               <Text style={styles.item}>{item.about.itemName}</Text>
               <Text style={styles.description}>{item.about.description}</Text>
-              <Text>{item.about.Diet}</Text>
+              <Text style={styles.diet}>{item.about.Diet}</Text>
             </View>
             <Text>{item.about.price}</Text>
           </View>

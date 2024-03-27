@@ -6,6 +6,7 @@ export const Appetizers = [
       description: "fennel, prosciutto, black sauce",
       price: "$14",
       Diet: "Dietary Information",
+      itemImage: require("../assets/GRILLED FAROE ISLAND SALMON.png"),
     },
   },
   {

@@ -6,6 +6,7 @@ export const Desserts = [
       description: "Strawberry compote, Strawberry balsamic",
       price: "$9",
       Diet: "Dietary Information",
+      itemImage: require("../assets/GRILLED FAROE ISLAND SALMON.png"),
     },
   },
   {

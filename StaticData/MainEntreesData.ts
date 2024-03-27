@@ -6,7 +6,7 @@ export const MainEntrees = [
       description: "quinona, oyster mushrooms, brussels sprout leaves",
       price: "$26",
       Diet: "Dietary Information",
-      itemImage: require("../assets/logoo.png"),
+      itemImage: require("../assets/GRILLED FAROE ISLAND SALMON.png"),
     },
   },
   {

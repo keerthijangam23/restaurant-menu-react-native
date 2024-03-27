@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   justifyContent:"space-between",
     paddingRight: 50,
-    margin: 30,
+    margin: 20,
     marginRight: 40,
   },
   diet: {

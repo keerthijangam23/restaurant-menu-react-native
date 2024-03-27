@@ -1,9 +1,9 @@
 import { View, Text, Modal, Button, StyleSheet } from "react-native";
 type TimingModelProps ={
-  isModelVisible:boolean,
+  isModalVisible:boolean,
   setIsModalVisible:React.Dispatch<React.SetStateAction<boolean>>
 }
-export default function TimingModel({ isModelVisible, setIsModalVisible }:TimingModelProps) {
+export default function TimingModel({ isModalVisible, setIsModalVisible }:TimingModelProps) {
   return (
     <Modal
       animationType="slide"
@@ -11,7 +11,7 @@ export default function TimingModel({ isModelVisible, setIsModalVisible }:Timing
         setIsModalVisible(false);
       }}
       transparent={true}
-      visible={isModelVisible}
+      visible={isModalVisible}
     >
       <View style={{ backgroundColor: "#000000aa", flex: 1 }}>
         <View style={{ backgroundColor: "white", margin: 100 }}>

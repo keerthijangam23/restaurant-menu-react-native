@@ -12,19 +12,19 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TimingModel from "./TimingModel";
 
-const resturantImage = require("../assets/restaurant.jpeg");
-const logoImage = require("../assets/logoo.png");
+// const resturantImage = require("../assets/restaurant.jpeg");
+// const logoImage = require("../assets/logoo.png");
 
 export default function AboutComponent() {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   return (
     <ScrollView style={styles.container}>
-      <ImageBackground source={resturantImage} style={styles.resImage}>
+      <ImageBackground source={require("../assets/restaurant.jpeg")} style={styles.resImage}>
         <Text style={styles.header}>
           <MaterialIcons name="error" size={16}/> WE ARE NOW OPEN FOR INDOOR DINING !
         </Text>
         <View style={styles.name}>
-          <Image source={logoImage} style={styles.logoo} />
+          <Image source={require("../assets/logoo.png")} style={styles.logoo} />
           <View>
             <Text style={styles.shop}>Del Ray Gourmet</Text>
             <Text style={styles.timings}>

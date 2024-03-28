@@ -45,7 +45,7 @@ export const Desserts = [
     about: {
       itemName: "BERRY NAPOLEON",
       description:
-        "Fresh mixed berries served in a white chocolate merinque basket with a passion fruit anglaise",
+        "Fresh mixed berries served in white chocolate merinque basket with a passion fruit anglaise",
       price: "$7",
       // Diet: "Dietary Information",
       // itemImage: require("../assets/15.jpg"),

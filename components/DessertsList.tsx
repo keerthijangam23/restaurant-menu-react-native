@@ -26,10 +26,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     flexShrink: 1,
-    backgroundColor: "pink",
+    // backgroundColor: "pink",
     marginBottom: 20,
     width: 350,
-    height: 140,
+    height: 100,
   },
   diet: {
     textDecorationLine: "underline",
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const MainEntreesList = () => {
+const DessertsList = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>DESSERTS</Text>
@@ -89,4 +89,4 @@ const MainEntreesList = () => {
   );
 };
 
-export default MainEntreesList;
+export default  DessertsList;

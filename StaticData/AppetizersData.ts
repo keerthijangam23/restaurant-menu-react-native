@@ -19,7 +19,7 @@ export const Appetizers = [
       price: "$12",
       complimentary: "~ extra bacon $3",
       // Diet: "Dietary Information",
-      // itemImage: require("../assets/10.jpg"),
+      newImage: require("../assets/newImage.jpeg"),
     },
   },
 ];

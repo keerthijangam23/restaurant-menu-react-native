@@ -3,7 +3,7 @@ export const Desserts = [
     title: "DESSERTS",
     about: {
       itemName: "TRES LECHES CAKE",
-      description: "Strawberry compote, Strawberry balsamic",
+      description: "Strawberry compote, Strawberry balsamic sdnf ",
       price: "$9",
       complimentary:
         "~Jorge Ordonez & Co. Victoria 2-Malaga, Spain $10.00 glass",

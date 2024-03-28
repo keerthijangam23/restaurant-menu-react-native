@@ -26,10 +26,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     flexShrink: 1,
-    backgroundColor: "pink",
+    // backgroundColor: "pink",
     marginBottom: 20,
     width: 350,
-    height: 140,
+    height: 100,
   },
 
   price: { flexShrink: 1 },
@@ -39,16 +39,19 @@ const styles = StyleSheet.create({
     marginRight: 10,
     borderRadius: 10,
     flexShrink: 1,
+    // backgroundColor: "yellow",
   },
   innerContainer: {
     flexShrink: 1,
     width: 300,
+    // backgroundColor: "blue",
   },
   wrapperContainer: {
     display: "flex",
     flexDirection: "row",
     width: 300,
     height: 100,
+    // backgroundColor: "red",
   },
 });
 
@@ -61,7 +64,7 @@ const MainEntreesList = () => {
         renderItem={({ item }) => (
           <View style={styles.menu}>
             <View style={styles.wrapperContainer}>
-              <View style={{}}>
+              <View>
                 {item.about.itemImage && (
                   <Image
                     style={styles.itemImage}

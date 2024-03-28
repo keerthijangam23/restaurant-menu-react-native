@@ -31,10 +31,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     flexShrink: 1,
-    backgroundColor: "pink",
+    // backgroundColor: "pink",
     marginBottom: 20,
     width: 350,
-    height: 140,
+    height: 90,
   },
   diet: {
     textDecorationLine: "underline",
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const MainEntreesList = () => {
+const AppetizersList = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>APPETIZERS</Text>
@@ -69,11 +69,24 @@ const MainEntreesList = () => {
         renderItem={({ item }) => (
           <View style={styles.menu}>
             <View style={styles.wrapperContainer}>
-              <View></View>
               <View style={styles.innerContainer}>
-                <Text style={styles.item}>{item.about.itemName}</Text>
+                {item.about.newImage ? (
+                  <View style={{ display: "flex", flexDirection: "row" }}>
+                    <Image
+                      source={item.about.newImage}
+                      style={{ width: 10, height: 10, marginTop: 5 }}
+                    />
+                    <Text style={styles.item}>{item.about.itemName}</Text>
+                  </View>
+                ) : (
+                  <Text style={styles.item}>{item.about.itemName}</Text>
+                )}
                 <Text style={styles.description}>{item.about.description}</Text>
-               {item.about.Diet ?<Text style={styles.diet}>{item.about.Diet}</Text> : <Text>{item.about.complimentary}</Text>}
+                {item.about.Diet ? (
+                  <Text style={styles.diet}>{item.about.Diet}</Text>
+                ) : (
+                  <Text>{item.about.complimentary}</Text>
+                )}
               </View>
               <View>
                 <Text style={styles.price}>{item.about.price}</Text>
@@ -86,4 +99,4 @@ const MainEntreesList = () => {
   );
 };
 
-export default MainEntreesList;
+export default AppetizersList;

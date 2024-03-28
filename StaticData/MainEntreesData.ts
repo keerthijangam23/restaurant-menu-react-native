@@ -30,7 +30,7 @@ export const MainEntrees = [
       price: "$36",
 
       Diet: "Dietary Information",
-      itemImage: require("../assets/3.jpeg"),
+      // itemImage: require("../assets/3.jpeg"),
     },
   },
   {
@@ -53,7 +53,7 @@ export const MainEntrees = [
 
       price: "$48",
       Diet: "Dietary Information",
-      itemImage: require("../assets/5.jpg"),
+      // itemImage: require("../assets/5.jpg"),
     },
   },
   {
@@ -65,7 +65,7 @@ export const MainEntrees = [
 
       price: "$28",
       Diet: "Dietary Information",
-      itemImage: require("../assets/6.jpg"),
+      // itemImage: require("../assets/6.jpg"),
     },
   },
   {
@@ -78,7 +78,7 @@ export const MainEntrees = [
 
       price: "$26",
       Diet: "Dietary Information",
-      itemImage: require("../assets/7.jpg"),
+      // itemImage: require("../assets/7.jpg"),
     },
   },
   {
@@ -88,7 +88,7 @@ export const MainEntrees = [
       description: "green lentils, chanterelle mushrooms, Waldoboro turnip",
       price: "$25",
       Diet: "Dietary Information",
-      itemImage: require("../assets/8.jpg"),
+      // itemImage: require("../assets/8.jpg"),
     },
   },
 ];

@@ -15,11 +15,10 @@ const styles = StyleSheet.create({
     color: "red",
     margin: 5,
   },
-  caption:{
-    alignSelf:"center",
-    marginBottom:10,
-    fontStyle:"italic"
-
+  caption: {
+    alignSelf: "center",
+    marginBottom: 10,
+    fontStyle: "italic",
   },
   item: {
     color: "brown",
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
   diet: {
     textDecorationLine: "underline",
   },
-  price: {},
+  price: {flexShrink:1},
   itemImage: {
     width: 100,
     height: 100,
@@ -50,8 +49,8 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     flexShrink: 1,
+    width: 300,
   },
-  
 });
 
 const MainEntreesList = () => {
@@ -71,14 +70,7 @@ const MainEntreesList = () => {
                 height: 100,
               }}
             >
-              <View style={{}}>
-                {item.about.itemImage && (
-                  <Image
-                    style={styles.itemImage}
-                    source={item.about.itemImage}
-                  />
-                )}
-              </View>
+              <View></View>
               <View style={styles.innerContainer}>
                 <Text style={styles.item}>{item.about.itemName}</Text>
                 <Text style={styles.description}>{item.about.description}</Text>

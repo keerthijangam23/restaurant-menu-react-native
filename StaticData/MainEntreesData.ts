@@ -5,7 +5,6 @@ export const MainEntrees = [
       itemName: "GRILLED FAROE ISLAND SALMON",
       description: "quinona, oyster mushrooms, brussels sprout leaves",
       price: "$26",
-      Diet: "Dietary Information",
       itemImage: require("../assets/1.jpeg"),
     },
   },
@@ -15,7 +14,6 @@ export const MainEntrees = [
       itemName: "PAN ROASTED DUCK BREAST",
       description: "herbed farro, orange-frisee salad, honey gastrique",
       price: "$29",
-      Diet: "Dietary Information",
       // itemImage: require("../assets/2.jpg"),
     },
   },
@@ -23,13 +21,9 @@ export const MainEntrees = [
     title: "MAIN ENTREES",
     about: {
       itemName: "CRISPY DUCK IN PORT CHERRY SAUCE",
-
       description:
         "roasted turnips, parnips, rutabaga and carrots with cornmeal, johnnycake wrapped duck confit, bok choy",
-
       price: "$36",
-
-      Diet: "Dietary Information",
       // itemImage: require("../assets/3.jpeg"),
     },
   },
@@ -39,7 +33,6 @@ export const MainEntrees = [
       itemName: "CASSOULET",
       description: "garlic and herb sausage, duck confit, cannellini beans",
       price: "$19",
-      Diet: "Dietary Information",
       itemImage: require("../assets/4.jpg"),
     },
   },
@@ -47,12 +40,10 @@ export const MainEntrees = [
     title: "MAIN ENTREES",
     about: {
       itemName: "TENDERLOIN OF BEEF WELLINGTON",
-
-      description:
-        "foie gras, spinach, duxelles  ~ Add Bearnaise, Red Wine, or Bordelaise sauce for $2 extra",
-
+      description: "foie gras, spinach, duxelles ",
       price: "$48",
-      Diet: "Dietary Information",
+      complimentary:
+        "~ Add Bearnaise, Red Wine, or Bordelaise sauce for $2 extra",
       // itemImage: require("../assets/5.jpg"),
     },
   },
@@ -60,11 +51,8 @@ export const MainEntrees = [
     title: "MAIN ENTREES",
     about: {
       itemName: "HERB ROASTED PORK",
-
       description: "with Creamy Polenta, Sun-Dried Tomato Jus @ Feta Gremolata",
-
       price: "$28",
-      Diet: "Dietary Information",
       // itemImage: require("../assets/6.jpg"),
     },
   },
@@ -72,12 +60,9 @@ export const MainEntrees = [
     title: "MAIN ENTREES",
     about: {
       itemName: "CLASSIC NEW YORK SIRLOIN",
-
-      description:
+      complimentary:
         "~ Add Jumbo Gulf Shrimp with garlic, white wine, lemon for $9",
-
       price: "$26",
-      Diet: "Dietary Information",
       // itemImage: require("../assets/7.jpg"),
     },
   },
@@ -87,7 +72,6 @@ export const MainEntrees = [
       itemName: "IDAHO RED TROUT",
       description: "green lentils, chanterelle mushrooms, Waldoboro turnip",
       price: "$25",
-      Diet: "Dietary Information",
       // itemImage: require("../assets/8.jpg"),
     },
   },

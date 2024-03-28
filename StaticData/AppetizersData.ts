@@ -17,7 +17,8 @@ export const Appetizers = [
       description: "bacon wrapped dates stuffed with feta, balsamic reduction",
 
       price: "$12",
-      Diet: "Dietary Information",
+      complimentary: "~ extra bacon $3",
+      // Diet: "Dietary Information",
       // itemImage: require("../assets/10.jpg"),
     },
   },

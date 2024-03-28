@@ -31,9 +31,7 @@ const styles = StyleSheet.create({
     width: 350,
     height: 140,
   },
-  diet: {
-    textDecorationLine: "underline",
-  },
+
   price: { flexShrink: 1 },
   itemImage: {
     width: 100,
@@ -73,8 +71,16 @@ const MainEntreesList = () => {
               </View>
               <View style={styles.innerContainer}>
                 <Text style={styles.item}>{item.about.itemName}</Text>
-                <Text style={styles.description}>{item.about.description}</Text>
-                <Text style={styles.diet}>{item.about.Diet}</Text>
+                {item.about.description ? (
+                  <View>
+                    <Text style={styles.description}>
+                      {item.about.description}
+                    </Text>
+                    <Text>{item.about.complimentary}</Text>
+                  </View>
+                ) : (
+                  <Text>{item.about.complimentary}</Text>
+                )}
               </View>
               <View>
                 <Text style={styles.price}>{item.about.price}</Text>

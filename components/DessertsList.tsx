@@ -74,7 +74,9 @@ const MainEntreesList = () => {
               <View style={styles.innerContainer}>
                 <Text style={styles.item}>{item.about.itemName}</Text>
                 <Text style={styles.description}>{item.about.description}</Text>
-                <Text style={styles.diet}>{item.about.Diet}</Text>
+                {item.about.complimentary && (
+                  <Text>{item.about.complimentary}</Text>
+                )}
               </View>
               <View>
                 <Text style={styles.price}>{item.about.price}</Text>

@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   diet: {
     textDecorationLine: "underline",
   },
-  price: {flexShrink:1},
+  price: { flexShrink: 1 },
   itemImage: {
     width: 100,
     height: 100,
@@ -50,6 +50,12 @@ const styles = StyleSheet.create({
   innerContainer: {
     flexShrink: 1,
     width: 300,
+  },
+  wrapperContainer: {
+    display: "flex",
+    flexDirection: "row",
+    width: 300,
+    height: 100,
   },
 });
 
@@ -62,14 +68,7 @@ const MainEntreesList = () => {
         data={Appetizers}
         renderItem={({ item }) => (
           <View style={styles.menu}>
-            <View
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                width: 300,
-                height: 100,
-              }}
-            >
+            <View style={styles.wrapperContainer}>
               <View></View>
               <View style={styles.innerContainer}>
                 <Text style={styles.item}>{item.about.itemName}</Text>

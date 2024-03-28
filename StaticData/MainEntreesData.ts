@@ -16,7 +16,7 @@ export const MainEntrees = [
       description: "herbed farro, orange-frisee salad, honey gastrique",
       price: "$29",
       Diet: "Dietary Information",
-      itemImage: require("../assets/2.jpg"),
+      // itemImage: require("../assets/2.jpg"),
     },
   },
   {

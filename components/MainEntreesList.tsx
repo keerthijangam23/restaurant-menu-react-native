@@ -25,24 +25,25 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+    flexShrink: 1,
+    backgroundColor: "pink",
     marginBottom: 20,
     width: 350,
-    height: 150,
+    height: 140,
   },
   diet: {
     textDecorationLine: "underline",
   },
-  price: {
-    width: 200,
-  },
+  price: {},
   itemImage: {
     width: 100,
     height: 100,
     marginRight: 10,
     borderRadius: 10,
+    flexShrink: 1,
   },
   innerContainer: {
-    width: 180,
+    flexShrink: 1,
   },
 });
 
@@ -54,15 +55,31 @@ const MainEntreesList = () => {
         data={MainEntrees}
         renderItem={({ item }) => (
           <View style={styles.menu}>
-            {item.about.itemImage && (
-              <Image style={styles.itemImage} source={item.about.itemImage} />
-            )}
-            <View style={styles.innerContainer}>
-              <Text style={styles.item}>{item.about.itemName}</Text>
-              <Text style={styles.description}>{item.about.description}</Text>
-              <Text style={styles.diet}>{item.about.Diet}</Text>
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                width: 300,
+                height: 100,
+              }}
+            >
+              <View style={{}}>
+                {item.about.itemImage && (
+                  <Image
+                    style={styles.itemImage}
+                    source={item.about.itemImage}
+                  />
+                )}
+              </View>
+              <View style={styles.innerContainer}>
+                <Text style={styles.item}>{item.about.itemName}</Text>
+                <Text style={styles.description}>{item.about.description}</Text>
+                <Text style={styles.diet}>{item.about.Diet}</Text>
+              </View>
+              <View>
+                <Text style={styles.price}>{item.about.price}</Text>
+              </View>
             </View>
-            <Text style={styles.price}>{item.about.price}</Text>
           </View>
         )}
       />

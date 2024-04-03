@@ -34,7 +34,7 @@ export default function AboutComponent() {
                 Closed
                 <Entypo name="dot-single" size={15} />
               </Text>
-              Opens Mon 11:00 AM
+              <Text style={styles.innerTimings}>Opens Mon 11:00 AM</Text>
               <AntDesign name="down" onPress={() => setIsModalVisible(true)} />
             </Text>
             <Text style={styles.address}>
@@ -102,5 +102,8 @@ const styles = StyleSheet.create({
   },
   number: {
     textDecorationLine: "underline",
+  },
+  innerTimings: {
+    fontSize: 17,
   },
 });

@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   diet: {
     textDecorationLine: "underline",
   },
-  price: { flexShrink: 1 ,color: "rgb(133 ,77 ,14)",},
+  price: { flexShrink: 1 ,color: "rgb(133 ,77 ,14)",marginRight:-10},
   itemImage: {
     width: 100,
     height: 100,

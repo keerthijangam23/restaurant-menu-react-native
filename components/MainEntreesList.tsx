@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   item: {
-    color: "brown",
+    color: "rgb(133 ,77 ,14)",
   },
   description: {
     fontStyle: "italic",
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     height: 100,
   },
 
-  price: { flexShrink: 1 },
+  price: { flexShrink: 1,color: "rgb(133 ,77 ,14)", },
   itemImage: {
     width: 100,
     height: 100,
@@ -53,6 +53,9 @@ const styles = StyleSheet.create({
     height: 100,
     // backgroundColor: "red",
   },
+  complimentary:{
+    color:"rgb(107,114,128)"
+  }
 });
 
 const MainEntreesList = () => {
@@ -79,10 +82,10 @@ const MainEntreesList = () => {
                     <Text style={styles.description}>
                       {item.about.description}
                     </Text>
-                    <Text>{item.about.complimentary}</Text>
+                    <Text style={styles.complimentary}>{item.about.complimentary}</Text>
                   </View>
                 ) : (
-                  <Text>{item.about.complimentary}</Text>
+                  <Text style={styles.complimentary}>{item.about.complimentary}</Text>
                 )}
               </View>
               <View>

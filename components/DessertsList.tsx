@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   item: {
-    color: "brown",
+    color: "rgb(133 ,77 ,14)",
+   
   },
   description: {
     fontStyle: "italic",
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
   diet: {
     textDecorationLine: "underline",
   },
-  price: { flexShrink: 1 },
+  price: { flexShrink: 1 ,color: "rgb(133 ,77 ,14)",},
   itemImage: {
     width: 100,
     height: 100,
@@ -52,6 +53,9 @@ const styles = StyleSheet.create({
     width: 300,
     height: 100,
   },
+  complimentary:{
+    color:"rgb(107,114,128)"
+  }
 });
 
 const DessertsList = () => {
@@ -75,7 +79,7 @@ const DessertsList = () => {
                 <Text style={styles.item}>{item.about.itemName}</Text>
                 <Text style={styles.description}>{item.about.description}</Text>
                 {item.about.complimentary && (
-                  <Text>{item.about.complimentary}</Text>
+                  <Text style={styles.complimentary}>{item.about.complimentary}</Text>
                 )}
               </View>
               <View>

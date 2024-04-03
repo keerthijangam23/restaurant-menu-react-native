@@ -1,6 +1,7 @@
 import React from "react";
 import { FlatList, StyleSheet, Text, View, Image } from "react-native";
 import { Appetizers } from "../StaticData/AppetizersData";
+import { useFonts } from "expo-font";
 
 const styles = StyleSheet.create({
   container: {
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontStyle: "italic",
+    // fontFamily:"Arizonia-Regular"
   },
   menu: {
     display: "flex",
@@ -60,6 +62,10 @@ const styles = StyleSheet.create({
 });
 
 const AppetizersList = () => {
+  // const [fontsLoaded] = useFonts({"Arizonia-Regular":require("./assets/fonts/Arizonia-Regular.ttf")})
+  // if(!fontsLoaded){
+  //   return undefined
+  // }
   return (
     <View style={styles.container}>
       <Text style={styles.header}>APPETIZERS</Text>

@@ -17,6 +17,7 @@ export default function AboutComponent() {
   return (
     <ScrollView style={styles.container}>
       <ImageBackground
+        // testID="resturant-back-ground-image"
         source={require("../assets/restaurant.jpeg")}
         style={styles.resImage}
       >
@@ -41,7 +42,7 @@ export default function AboutComponent() {
             </Text>
             <Text style={styles.address}>
               <AntDesign name="phone" />
-              Tel: 301-555-1212
+              <Text>Tel:</Text> <Text style={styles.number}>301-555-1212</Text>
             </Text>
           </View>
         </View>
@@ -80,13 +81,10 @@ const styles = StyleSheet.create({
   name: {
     width: "70%",
     height: "50%",
-    marginLeft: 20,
     marginTop: 40,
     flexDirection: "row",
-    // backgroundColor: "red",
   },
   shop: {
-    paddingLeft: 10,
     fontSize: 30,
     fontWeight: "bold",
     color: "white",
@@ -94,7 +92,6 @@ const styles = StyleSheet.create({
   timings: {
     color: "white",
     fontSize: 15,
-    paddingLeft: 10,
   },
   closed: {
     fontSize: 20,
@@ -102,6 +99,8 @@ const styles = StyleSheet.create({
   },
   address: {
     color: "white",
-    paddingLeft: 10,
+  },
+  number: {
+    textDecorationLine: "underline",
   },
 });

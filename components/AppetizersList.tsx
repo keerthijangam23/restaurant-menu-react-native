@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
   },
   item: {
-    color: "rgb(133 ,77 ,14)",
+    // color: "rgb(133 ,77 ,14)",
   },
   description: {
     fontStyle: "italic",
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     color:"rgb(107,114,128)"
   },
-  price: { flexShrink: 1, color: "rgb(133 ,77 ,14)",marginRight:-10},
+  price: { flexShrink: 1, color: "rgb(133 ,77 ,14)",  marginRight:-10},
   itemImage: {
     width: 100,
     height: 100,

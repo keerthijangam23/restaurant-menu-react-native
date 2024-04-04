@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     height: 100,
   },
 
-  price: { flexShrink: 1, color: "rgb(133 ,77 ,14)", marginRight:-10 },
+  price: { flexShrink: 1, color: "rgb(133 ,77 ,14)", marginRight: -10 },
   itemImage: {
     width: 100,
     height: 100,
@@ -61,7 +61,10 @@ const styles = StyleSheet.create({
 const MainEntreesList = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>MAIN ENTREES</Text>
+      <View>
+        <Text style={styles.header}>MAIN ENTREES</Text>
+      </View>
+
       <FlatList
         data={MainEntrees}
         renderItem={({ item }) => (

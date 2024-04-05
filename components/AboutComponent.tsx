@@ -17,25 +17,25 @@ export default function AboutComponent() {
   return (
     <ScrollView style={styles.container}>
       <ImageBackground
-        // testID="resturant-back-ground-image"
+        testID="resturant-back-ground-image"
         source={require("../assets/restaurant.jpeg")}
         style={styles.resImage}
       >
-        <Text style={styles.header}>
+        <Text style={styles.header}  testID="headerText" >
           <MaterialIcons name="error" size={16} /> WE ARE NOW OPEN FOR INDOOR
           DINING !
         </Text>
         <View style={styles.name}>
-          <Image source={require("../assets/logoo.png")} style={styles.logoo} />
+          <Image source={require("../assets/logoo.png")} style={styles.logoo} testID="logoImage" />
           <View>
-            <Text style={styles.shop}>Del Ray Gourmet</Text>
+            <Text style={styles.shop} >Del Ray Gourmet</Text>
             <Text style={styles.timings}>
               <Text style={styles.closed}>
                 Closed
                 <Entypo name="dot-single" size={15} />
               </Text>
               <Text style={styles.innerTimings}>Opens Mon 11:00 AM</Text>
-              <AntDesign name="down" onPress={() => setIsModalVisible(true)} />
+              <AntDesign name="down" onPress={() => setIsModalVisible(true)} testID="downArrow" />
             </Text>
             <Text style={styles.address}>
               123 Ave of the Roosters,Derwood MD

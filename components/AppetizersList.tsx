@@ -40,9 +40,9 @@ const styles = StyleSheet.create({
   },
   diet: {
     textDecorationLine: "underline",
-    color:"rgb(107,114,128)"
+    color: "rgb(107,114,128)",
   },
-  price: { flexShrink: 1, color: "rgb(133 ,77 ,14)",  marginRight:-10},
+  price: { flexShrink: 1, color: "rgb(133 ,77 ,14)", marginRight: -10 },
   itemImage: {
     width: 100,
     height: 100,
@@ -60,16 +60,12 @@ const styles = StyleSheet.create({
     width: 300,
     height: 100,
   },
-  complimentary:{
-    color:"rgb(107,114,128)"
-  }
+  complimentary: {
+    color: "rgb(107,114,128)",
+  },
 });
 
 const AppetizersList = () => {
-  // const [fontsLoaded] = useFonts({"Arizonia-Regular":require("./assets/fonts/Arizonia-Regular.ttf")})
-  // if(!fontsLoaded){
-  //   return undefined
-  // }
   return (
     <View style={styles.container}>
       <Text style={styles.header}>APPETIZERS</Text>
@@ -77,9 +73,9 @@ const AppetizersList = () => {
       <FlatList
         data={Appetizers}
         renderItem={({ item }) => (
-          <View style={styles.menu}>
+          <View style={styles.menu} testID="menuContainer">
             <View style={styles.wrapperContainer}>
-              <View style={styles.innerContainer}>
+              <View style={styles.innerContainer}  testID="innerContainer">
                 {item.about.newImage ? (
                   <View style={{ display: "flex", flexDirection: "row" }}>
                     <Image
@@ -95,11 +91,13 @@ const AppetizersList = () => {
                 {item.about.Diet ? (
                   <Text style={styles.diet}>{item.about.Diet}</Text>
                 ) : (
-                  <Text style={styles.complimentary}>{item.about.complimentary}</Text>
+                  <Text style={styles.complimentary}>
+                    {item.about.complimentary}
+                  </Text>
                 )}
               </View>
               <View>
-                <Text style={styles.price}>{item.about.price}</Text>
+                <Text style={styles.price} testID="price">{item.about.price}</Text>
               </View>
             </View>
           </View>

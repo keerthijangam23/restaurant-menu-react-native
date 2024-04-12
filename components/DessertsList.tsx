@@ -61,12 +61,12 @@ const styles = StyleSheet.create({
 const DessertsList = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>DESSERTS</Text>
+      <Text style={styles.header} >DESSERTS</Text>
       <FlatList
         data={Desserts}
         renderItem={({ item }) => (
-          <View style={styles.menu}>
-            <View style={styles.wrapperContainer}>
+          <View style={styles.menu} testID="menuContainer">
+            <View style={styles.wrapperContainer} testID="wrapperContainer">
               <View style={{}}>
                 {item.about.itemImage && (
                   <Image
@@ -83,7 +83,7 @@ const DessertsList = () => {
                 )}
               </View>
               <View>
-                <Text style={styles.price}>{item.about.price}</Text>
+                <Text style={styles.price} testID="price">{item.about.price}</Text>
               </View>
             </View>
           </View>

@@ -68,8 +68,8 @@ const MainEntreesList = () => {
       <FlatList
         data={MainEntrees}
         renderItem={({ item }) => (
-          <View style={styles.menu}>
-            <View style={styles.wrapperContainer}>
+          <View style={styles.menu} testID="menuContainer">
+            <View style={styles.wrapperContainer} testID="wrapperContainer">
               <View>
                 {item.about.itemImage && (
                   <Image
@@ -96,7 +96,7 @@ const MainEntreesList = () => {
                 )}
               </View>
               <View>
-                <Text style={styles.price}>{item.about.price}</Text>
+                <Text style={styles.price} testID="price">{item.about.price}</Text>
               </View>
             </View>
           </View>

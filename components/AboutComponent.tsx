@@ -5,13 +5,15 @@ import {
   View,
   Image,
   ImageBackground,
+  Pressable,
 } from "react-native";
 import { useState } from "react";
-import Entypo from "@expo/vector-icons/Entypo";
-import AntDesign from "@expo/vector-icons/AntDesign";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TimingModel from "./TimingModel";
-
+import {
+  faCircleExclamation,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
 export default function AboutComponent() {
@@ -23,27 +25,36 @@ export default function AboutComponent() {
         source={require("../assets/restaurant.jpeg")}
         style={styles.resImage}
       >
-        <Text style={styles.header}  testID="headerText" >
-          <MaterialIcons name="error" size={16} /> WE ARE NOW OPEN FOR INDOOR
-          DINING !
+        <Text style={styles.header} testID="headerText">
+          <FontAwesomeIcon
+            style={{ color: "white" }}
+            icon={faCircleExclamation}
+          />
+          WE ARE NOW OPEN FOR INDOOR DINING !
         </Text>
         <View style={styles.name}>
-          <Image source={require("../assets/logoo.png")} style={styles.logoo} testID="logoImage" />
+          <Image
+            source={require("../assets/logoo.png")}
+            style={styles.logoo}
+            testID="logoImage"
+          />
           <View>
-            <Text style={styles.shop} >Del Ray Gourmet</Text>
+            <Text style={styles.shop}>Del Ray Gourmet</Text>
             <Text style={styles.timings}>
-              <Text style={styles.closed}>
-                Closed
-                <Entypo name="dot-single" size={15} />
-              </Text>
-              <Text style={styles.innerTimings}>Opens Mon 11:00 AM</Text>
-              <AntDesign name="down" onPress={() => setIsModalVisible(true)} testID="downArrow" />
+              <Text style={styles.closed}>Closed .</Text>
+              <Text style={styles.innerTimings}> Opens Mon 11:00 AM</Text>
+              <Pressable testID="downArrow" onPress={() => setIsModalVisible(true)}>
+                <FontAwesomeIcon
+                  icon={faChevronDown}
+                  style={{ color: "white" }}
+                />
+              </Pressable>
             </Text>
             <Text style={styles.address}>
               123 Ave of the Roosters,Derwood MD
             </Text>
             <Text style={styles.address}>
-              <AntDesign name="phone" />
+              <FontAwesomeIcon icon={faPhone} style={{ color: "white" }} />
               <Text>Tel:</Text> <Text style={styles.number}>301-555-1212</Text>
             </Text>
           </View>

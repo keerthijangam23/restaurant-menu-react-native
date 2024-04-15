@@ -12,11 +12,14 @@
   "jest": {
     "preset": "@testing-library/react-native",
     "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg|@fortawesome/react-native-fontawesome)"
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg|@expo/vector-icons)"
     ]
   },
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.3",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-native-fontawesome": "^0.3.0",
     "@react-native/js-polyfills": "^0.75.0-main",
     "@react-navigation/material-top-tabs": "^6.6.13",
     "@types/jest": "^29.5.12",
@@ -29,7 +32,9 @@
     "react-native": "0.72.10",
     "react-native-pager-view": "6.2.0",
     "react-native-picker-select": "^9.0.1",
+    "react-native-svg": "^15.1.0",
     "react-native-tab-view": "^3.5.2",
+    "react-native-vector-icons": "^10.0.3",
     "react-test-renderer": "^18.2.0"
   },
   "devDependencies": {

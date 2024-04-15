@@ -12,6 +12,8 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TimingModel from "./TimingModel";
 
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+
 export default function AboutComponent() {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   return (

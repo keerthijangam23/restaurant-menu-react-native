@@ -1,8 +1,8 @@
-import * as React from "react";
+
 import { screen, render, fireEvent } from "@testing-library/react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import AppetizersList from "../components/AppetizersList";
-
+import '@testing-library/react-native/extend-expect';
 
 describe("checking appetizersList rendered or not", () => {
   it("checking appetizers header rendered or not", () => {

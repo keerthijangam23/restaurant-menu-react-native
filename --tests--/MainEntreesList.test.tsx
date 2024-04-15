@@ -1,8 +1,8 @@
-import * as React from "react";
+
 import { screen, render, fireEvent } from "@testing-library/react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import MainEntreesList from "../components/MainEntreesList";
-
+import '@testing-library/react-native/extend-expect';
 describe("checking MainEntreesList  rendered or not", () => {
   it("checking Main Entrees header rendered or not", () => {
     render(

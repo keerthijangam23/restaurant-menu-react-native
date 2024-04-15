@@ -43,7 +43,10 @@ export default function AboutComponent() {
             <Text style={styles.timings}>
               <Text style={styles.closed}>Closed .</Text>
               <Text style={styles.innerTimings}> Opens Mon 11:00 AM</Text>
-              <Pressable testID="downArrow" onPress={() => setIsModalVisible(true)}>
+              <Pressable
+                testID="downArrow"
+                onPress={() => setIsModalVisible(true)}
+              >
                 <FontAwesomeIcon
                   icon={faChevronDown}
                   style={{ color: "white" }}

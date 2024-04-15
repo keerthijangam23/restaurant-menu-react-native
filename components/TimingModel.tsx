@@ -19,7 +19,7 @@ export default function TimingModel({
       <View style={{ backgroundColor: "#000000aa", flex: 1 }}>
         <View style={{ backgroundColor: "white", margin: 100 }}>
           <Text>Business Hours 301-555-1212</Text>
-          <Button title="close" onPress={() => setIsModalVisible(false)} />
+          <Button title="close" testID="closeButton" onPress={() => setIsModalVisible(false)} />
         </View>
       </View>
     </Modal>

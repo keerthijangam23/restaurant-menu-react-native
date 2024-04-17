@@ -1,6 +1,6 @@
 export const MenuData = [
   {
-    title: "APPETIZERS",
+    title: "Appetizers",
     data: [
       {
         itemName: "DAY BOAT SCALLOPS",
@@ -26,7 +26,7 @@ export const MenuData = [
   },
 
   {
-    title: "DESSERTS",
+    title: "Desserts",
     data: [
       {
         itemName: "TRES LECHES CAKE",
@@ -88,7 +88,7 @@ export const MenuData = [
     ],
   },
   {
-    title: "MAIN ENTREES",
+    title: "Main Entrees",
     data: [
       {
         itemName: "GRILLED FAROE ISLAND SALMON",

@@ -30,8 +30,8 @@ export default function SectionListMenuData() {
       )}
       renderSectionHeader={({ section }) => (
         <View>
-          <Text style={styles.FoodTitle}>{section.title}</Text>
-          {section.title == "APPETIZERS" ? (
+          <Text style={styles.FoodTitle}>{section.title.toUpperCase()}</Text>
+          {section.title == "Appetizers" ? (
             <Text style={styles.caption}>Our local menu changes daily</Text>
           ) : null}
         </View>

@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     height: 90,
     marginRight: 10,
     borderRadius: 10,
-    flexShrink: 1,
+    // flexShrink: 1,
   },
   diet: {
     textDecorationLine: "underline",

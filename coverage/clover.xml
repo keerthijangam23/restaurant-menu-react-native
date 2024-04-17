@@ -1,37 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1713269510707" clover="3.2.0">
-  <project timestamp="1713269510707" name="All files">
-    <metrics statements="21" coveredstatements="18" conditionals="6" coveredconditionals="2" methods="8" coveredmethods="5" elements="35" coveredelements="25" complexity="0" loc="21" ncloc="21" packages="3" files="11" classes="11"/>
-    <package name="StaticData">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="MenuData.ts" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\StaticData\MenuData.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1713323104381" clover="3.2.0">
+  <project timestamp="1713323104381" name="All files">
+    <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4" elements="17" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="2" files="4" classes="4"/>
     <package name="assets">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="1.jpeg" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\assets\1.jpeg">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-      </file>
-      <file name="13.jpg" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\assets\13.jpg">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-      </file>
-      <file name="4.jpg" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\assets\4.jpg">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-      </file>
-      <file name="9.jpg" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\assets\9.jpg">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-      </file>
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="logoo.png" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\assets\logoo.png">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-      </file>
-      <file name="newImage.jpeg" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\assets\newImage.jpeg">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
       </file>
@@ -41,21 +14,13 @@
       </file>
     </package>
     <package name="components">
-      <metrics statements="13" coveredstatements="10" conditionals="6" coveredconditionals="2" methods="8" coveredmethods="5"/>
+      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
       <file name="AboutComponent.tsx" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\components\AboutComponent.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="23" count="6" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="78" count="1" type="stmt"/>
-      </file>
-      <file name="AppetizersList.tsx" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\components\AppetizersList.tsx">
-        <metrics statements="5" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-        <line num="69" count="6" type="stmt"/>
-        <line num="76" count="0" type="stmt"/>
-        <line num="105" count="0" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
       </file>
       <file name="TimingModel.tsx" path="C:\Users\jangam keerthi\Documents\Dev\React-native\coffeeShop-react-native\sample\components\TimingModel.tsx">
         <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>

@@ -1,55 +1,63 @@
 import React from "react";
-import {
-  SectionList,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  Image,
-} from "react-native";
+import { ScrollView, StyleSheet, Text, View, Image } from "react-native";
 import { MenuData } from "../StaticData/MenuData";
+import SectionList from "react-native-tabs-section-list/lib/SectionList";
 export default function SectionListMenuData() {
   return (
-    <ScrollView style={styles.container}>
-      <SectionList
-        sections={MenuData}
-        renderItem={({ item }) => (
-          <View style={styles.card}>
-            {item.type !== "APPETIZERS" && item.itemImage ? (
-              <Image style={styles.itemImage} source={item.itemImage} />
-            ) : null}
+    <SectionList
+      sections={MenuData}
+      renderItem={({ item }) => (
+        <View style={styles.card}>
+          {item.type !== "APPETIZERS" && item.itemImage ? (
+            <Image style={styles.itemImage} source={item.itemImage} />
+          ) : null}
 
-            <View style={styles.innerContainer}>
-              <Text style={styles.itemName}>{item.itemName}</Text>
-              {item.description ? <Text>{item.description}</Text> : null}
-              {item.type == "APPETIZERS" ? (
-                <Text style={styles.diet}>{item.Diet}</Text>
-              ) : null}
-              {item.complimentary ? <Text>{item.complimentary}</Text> : null}
-            </View>
-
-            <Text style={styles.price}>{item.price}</Text>
-          </View>
-        )}
-        renderSectionHeader={({ section }) => (
-          <View>
-            <Text style={styles.FoodTitle}>{section.title}</Text>
-            {section.title == "APPETIZERS" ? (
-              <Text style={styles.caption}>Our local menu changes daily</Text>
+          <View style={styles.innerContainer}>
+            <Text style={styles.itemName}>{item.itemName}</Text>
+            {item.description ? <Text>{item.description}</Text> : null}
+            {item.type == "APPETIZERS" ? (
+              <Text style={styles.diet}>{item.Diet}</Text>
             ) : null}
+            {item.complimentary ? <Text>{item.complimentary}</Text> : null}
           </View>
-        )}
-        keyExtractor={(item) => item.itemName}
-        stickySectionHeadersEnabled
-      />
-    </ScrollView>
+
+          <Text style={styles.price}>{item.price}</Text>
+        </View>
+      )}
+      renderSectionHeader={({ section }) => (
+        <View>
+          <Text style={styles.FoodTitle}>{section.title}</Text>
+          {section.title == "APPETIZERS" ? (
+            <Text style={styles.caption}>Our local menu changes daily</Text>
+          ) : null}
+        </View>
+      )}
+      keyExtractor={(item) => item.itemName}
+      stickySectionHeadersEnabled={false}
+      scrollToLocationOffset={50}
+      tabBarStyle={styles.tabBar}
+      renderTab={({ title, isActive }) => (
+        <View
+          style={[styles.tabContainer, { borderBottomWidth: isActive ? 1 : 0 }]}
+        >
+          <Text
+            style={[
+              styles.tabText,
+              { color: isActive ? "#090909" : "#9e9e9e" },
+            ]}
+          >
+            {title}
+          </Text>
+        </View>
+      )}
+    />
   );
 }
 const styles = StyleSheet.create({
-  container: {
-    width: 380,
-    flex: 1,
-  },
+  // container: {
+  //   width: 380,
+  //   flex: 1,
+  // },
   card: {
     display: "flex",
     flexDirection: "row",
@@ -98,5 +106,19 @@ const styles = StyleSheet.create({
     flexShrink: 1,
     width: 280,
     // backgroundColor: "blue",
+  },
+  tabBar: {
+    backgroundColor: "#fff",
+    borderBottomColor: "#f4f4f4",
+    borderBottomWidth: 1,
+  },
+  tabContainer: {
+    borderBottomColor: "#090909",
+  },
+  tabText: {
+    padding: 15,
+    color: "#9e9e9e",
+    fontSize: 18,
+    fontWeight: "500",
   },
 });

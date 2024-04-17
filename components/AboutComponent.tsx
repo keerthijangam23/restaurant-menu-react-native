@@ -9,17 +9,19 @@ import {
 } from "react-native";
 import { useState } from "react";
 import TimingModel from "./TimingModel";
+
 import {
   faCircleExclamation,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import SectionListMenuData from "./SectionListMenuData";
 
 export default function AboutComponent() {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   return (
-    <ScrollView style={styles.container}>
+    <View>
       <ImageBackground
         testID="resturant-back-ground-image"
         source={require("../assets/restaurant.jpeg")}
@@ -69,16 +71,11 @@ export default function AboutComponent() {
           setIsModalVisible={setIsModalVisible}
         />
       )}
-    </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 70,
-    marginBottom: -280,
-    flex: 1,
-  },
   resImage: {
     width: 500,
     height: 200,

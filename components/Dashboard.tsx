@@ -12,7 +12,6 @@ export default function Dashboard() {
 const styles = StyleSheet.create({
     container: {
         marginTop: 70,
-        // marginBottom: -280,
         flex: 1,
       },
 })

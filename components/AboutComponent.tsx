@@ -16,8 +16,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import SectionListMenuData from "./SectionListMenuData";
-
 export default function AboutComponent() {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   return (

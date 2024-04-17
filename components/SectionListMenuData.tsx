@@ -138,6 +138,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontStyle: "italic",
+    fontFamily:"serif"
   },
   newImage: {
     width: 20,

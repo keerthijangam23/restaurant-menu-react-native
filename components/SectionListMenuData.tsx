@@ -13,7 +13,12 @@ export default function SectionListMenuData() {
           ) : null}
 
           <View style={styles.innerContainer}>
-            <Text style={styles.itemName}>{item.itemName}</Text>
+            <View style={styles.newImageFoodnameConatiner}>
+              {item.newImage ? (
+                <Image style={styles.newImage} source={item.newImage} />
+              ) : null}
+              <Text style={styles.itemName}>{item.itemName}</Text>
+            </View>
             {item.description ? (
               <Text style={styles.description}>{item.description}</Text>
             ) : null}
@@ -133,5 +138,14 @@ const styles = StyleSheet.create({
   },
   description: {
     fontStyle: "italic",
+  },
+  newImage: {
+    width: 20,
+    height: 10,
+    marginTop: 5,
+  },
+  newImageFoodnameConatiner: {
+    display: "flex",
+    flexDirection: "row",
   },
 });

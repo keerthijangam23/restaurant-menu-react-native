@@ -14,7 +14,9 @@ export default function SectionListMenuData() {
 
           <View style={styles.innerContainer}>
             <Text style={styles.itemName}>{item.itemName}</Text>
-            {item.description ? <Text>{item.description}</Text> : null}
+            {item.description ? (
+              <Text style={styles.description}>{item.description}</Text>
+            ) : null}
             {item.type == "APPETIZERS" && item.Diet ? (
               <Text style={styles.diet}>{item.Diet}</Text>
             ) : null}
@@ -45,7 +47,10 @@ export default function SectionListMenuData() {
           <Text
             style={[
               styles.tabText,
-              { color: isActive ? "#090909" : "#9e9e9e" },
+              {
+                color: isActive ? "rgb(239 68 68)" : "black",
+                backgroundColor: isActive ? "rgb(254 242 242)" : "white",
+              },
             ]}
           >
             {title}
@@ -115,15 +120,18 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   tabContainer: {
-    borderBottomColor: "#090909",
+    borderBottomColor: "rgb(239 68 68)",
   },
   tabText: {
     padding: 15,
     color: "#9e9e9e",
     fontSize: 18,
-    fontWeight: "500",
+    fontWeight: "400",
   },
   complimentary: {
     color: "rgb(107, 114, 128)",
+  },
+  description: {
+    fontStyle: "italic",
   },
 });

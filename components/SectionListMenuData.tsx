@@ -15,10 +15,12 @@ export default function SectionListMenuData() {
           <View style={styles.innerContainer}>
             <Text style={styles.itemName}>{item.itemName}</Text>
             {item.description ? <Text>{item.description}</Text> : null}
-            {item.type == "APPETIZERS" ? (
+            {item.type == "APPETIZERS" && item.Diet ? (
               <Text style={styles.diet}>{item.Diet}</Text>
             ) : null}
-            {item.complimentary ? <Text>{item.complimentary}</Text> : null}
+            {item.complimentary ? (
+              <Text style={styles.complimentary}>{item.complimentary}</Text>
+            ) : null}
           </View>
 
           <Text style={styles.price}>{item.price}</Text>
@@ -120,5 +122,8 @@ const styles = StyleSheet.create({
     color: "#9e9e9e",
     fontSize: 18,
     fontWeight: "500",
+  },
+  complimentary: {
+    color: "rgb(107, 114, 128)",
   },
 });

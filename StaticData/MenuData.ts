@@ -18,7 +18,7 @@ export const MenuData = [
 
         price: "$12",
         complimentary: "~ extra bacon $3",
-        Diet: "Dietary Information",
+        // Diet: "Dietary Information",
         newImage: require("../assets/newImage.jpeg"),
         type: "APPETIZERS",
       },

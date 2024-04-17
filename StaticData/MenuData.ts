@@ -24,69 +24,6 @@ export const MenuData = [
       },
     ],
   },
-
-  {
-    title: "Desserts",
-    data: [
-      {
-        itemName: "TRES LECHES CAKE",
-        description: "Strawberry compote, Strawberry balsamic sdnf ",
-        price: "$9",
-        complimentary:
-          "~Jorge Ordonez & Co. Victoria 2-Malaga, Spain $10.00 glass",
-        // itemImage: require("../assets/11.jpg"),
-        type: "DESSERTS",
-        Diet: "Dietary Information",
-      },
-      {
-        itemName: "KEY LIME PUDDING",
-        description: "Chantilly cream & wafer cookies",
-        price: "$8",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/12.jpg"),
-        type: "DESSERTS",
-        Diet: "Dietary Information",
-      },
-      {
-        itemName: "HOUSE MADE ICE CREAM",
-        description: "Blood orange sherbet",
-        price: "$9",
-        itemImage: require("../assets/13.jpg"),
-        type: "DESSERTS",
-        Diet: "Dietary Information",
-      },
-      {
-        itemName: "CARROT CAKE",
-        description:
-          "Made with carrot, pineapple, coconuts, and raisins, with cream cheese frosting",
-        price: "$6",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/14.jpg"),
-        type: "DESSERTS",
-        Diet: "Dietary Information",
-      },
-      {
-        itemName: "BERRY NAPOLEON",
-        description:
-          "Fresh mixed berries served in white chocolate merinque basket with a passion fruit anglaise",
-        price: "$7",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/15.jpg"),
-        type: "DESSERTS",
-        Diet: "Dietary Information",
-      },
-      {
-        itemName: "KEY LIME PIE",
-        description:
-          "Coconut semifreddo, raspberry whipped creme franche, honey tuile & raspberry reduction",
-        price: "$8",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/16.jpg"),
-        type: "DESSERTS",
-        Diet: "Dietary Information",
-      },
-    ],
-  },
   {
     title: "Main Entrees",
     data: [
@@ -161,4 +98,68 @@ export const MenuData = [
       },
     ],
   },
+
+  {
+    title: "Desserts",
+    data: [
+      {
+        itemName: "TRES LECHES CAKE",
+        description: "Strawberry compote, Strawberry balsamic sdnf ",
+        price: "$9",
+        complimentary:
+          "~Jorge Ordonez & Co. Victoria 2-Malaga, Spain $10.00 glass",
+        // itemImage: require("../assets/11.jpg"),
+        type: "DESSERTS",
+        Diet: "Dietary Information",
+      },
+      {
+        itemName: "KEY LIME PUDDING",
+        description: "Chantilly cream & wafer cookies",
+        price: "$8",
+        // Diet: "Dietary Information",
+        // itemImage: require("../assets/12.jpg"),
+        type: "DESSERTS",
+        Diet: "Dietary Information",
+      },
+      {
+        itemName: "HOUSE MADE ICE CREAM",
+        description: "Blood orange sherbet",
+        price: "$9",
+        itemImage: require("../assets/13.jpg"),
+        type: "DESSERTS",
+        Diet: "Dietary Information",
+      },
+      {
+        itemName: "CARROT CAKE",
+        description:
+          "Made with carrot, pineapple, coconuts, and raisins, with cream cheese frosting",
+        price: "$6",
+        // Diet: "Dietary Information",
+        // itemImage: require("../assets/14.jpg"),
+        type: "DESSERTS",
+        Diet: "Dietary Information",
+      },
+      {
+        itemName: "BERRY NAPOLEON",
+        description:
+          "Fresh mixed berries served in white chocolate merinque basket with a passion fruit anglaise",
+        price: "$7",
+        // Diet: "Dietary Information",
+        // itemImage: require("../assets/15.jpg"),
+        type: "DESSERTS",
+        Diet: "Dietary Information",
+      },
+      {
+        itemName: "KEY LIME PIE",
+        description:
+          "Coconut semifreddo, raspberry whipped creme franche, honey tuile & raspberry reduction",
+        price: "$8",
+        // Diet: "Dietary Information",
+        // itemImage: require("../assets/16.jpg"),
+        type: "DESSERTS",
+        Diet: "Dietary Information",
+      },
+    ],
+  },
+  
 ];

@@ -35,7 +35,7 @@ export default function SectionListMenuData() {
       )}
       renderSectionHeader={({ section }) => (
         <View>
-          <Text style={styles.FoodTitle}>{section.title.toUpperCase()}</Text>
+          <Text style={styles.foodTitle}>{section.title.toUpperCase()}</Text>
           {section.title == "Appetizers" ? (
             <Text style={styles.caption}>Our local menu changes daily</Text>
           ) : null}
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   itemName: {
     color: "rgb(133 ,77 ,14)",
   },
-  FoodTitle: {
+  foodTitle: {
     alignSelf: "center",
     fontSize: 20,
     fontWeight: "400",
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontStyle: "italic",
-    fontFamily:"serif"
+    fontFamily: "serif",
   },
   newImage: {
     width: 20,

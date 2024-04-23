@@ -18,7 +18,6 @@ export const MenuData = [
 
         price: "$12",
         complimentary: "~ extra bacon $3",
-        // Diet: "Dietary Information",
         newImage: require("../assets/newImage.jpeg"),
         type: "APPETIZERS",
       },
@@ -39,7 +38,6 @@ export const MenuData = [
         itemName: "PAN ROASTED DUCK BREAST",
         description: "herbed farro, orange-frisee salad, honey gastrique",
         price: "$29",
-        // itemImage: require("../assets/2.jpg"),
         type: "MAIN ENTREES",
         Diet: "Dietary Information",
       },
@@ -48,7 +46,6 @@ export const MenuData = [
         description:
           "roasted turnips, parnips, rutabaga and carrots with cornmeal, johnnycake wrapped duck confit, bok choy",
         price: "$36",
-        // itemImage: require("../assets/3.jpeg"),
         type: "MAIN ENTREES",
         Diet: "Dietary Information",
       },
@@ -66,7 +63,6 @@ export const MenuData = [
         price: "$48",
         complimentary:
           "~ Add Bearnaise, Red Wine, or Bordelaise sauce for $2 extra",
-        // itemImage: require("../assets/5.jpg"),
         type: "MAIN ENTREES",
         Diet: "Dietary Information",
       },
@@ -75,7 +71,6 @@ export const MenuData = [
         description:
           "with Creamy Polenta, Sun-Dried Tomato Jus @ Feta Gremolata",
         price: "$28",
-        // itemImage: require("../assets/6.jpg"),
         type: "MAIN ENTREES",
         Diet: "Dietary Information",
       },
@@ -84,7 +79,6 @@ export const MenuData = [
         complimentary:
           "~ Add Jumbo Gulf Shrimp with garlic, white wine, lemon for $9",
         price: "$26",
-        // itemImage: require("../assets/7.jpg"),
         type: "MAIN ENTREES",
         Diet: "Dietary Information",
       },
@@ -92,7 +86,6 @@ export const MenuData = [
         itemName: "IDAHO RED TROUT",
         description: "green lentils, chanterelle mushrooms, Waldoboro turnip",
         price: "$25",
-        // itemImage: require("../assets/8.jpg"),
         type: "MAIN ENTREES",
         Diet: "Dietary Information",
       },
@@ -108,7 +101,6 @@ export const MenuData = [
         price: "$9",
         complimentary:
           "~Jorge Ordonez & Co. Victoria 2-Malaga, Spain $10.00 glass",
-        // itemImage: require("../assets/11.jpg"),
         type: "DESSERTS",
         Diet: "Dietary Information",
       },
@@ -116,8 +108,6 @@ export const MenuData = [
         itemName: "KEY LIME PUDDING",
         description: "Chantilly cream & wafer cookies",
         price: "$8",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/12.jpg"),
         type: "DESSERTS",
         Diet: "Dietary Information",
       },
@@ -134,8 +124,6 @@ export const MenuData = [
         description:
           "Made with carrot, pineapple, coconuts, and raisins, with cream cheese frosting",
         price: "$6",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/14.jpg"),
         type: "DESSERTS",
         Diet: "Dietary Information",
       },
@@ -144,8 +132,6 @@ export const MenuData = [
         description:
           "Fresh mixed berries served in white chocolate merinque basket with a passion fruit anglaise",
         price: "$7",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/15.jpg"),
         type: "DESSERTS",
         Diet: "Dietary Information",
       },
@@ -154,12 +140,9 @@ export const MenuData = [
         description:
           "Coconut semifreddo, raspberry whipped creme franche, honey tuile & raspberry reduction",
         price: "$8",
-        // Diet: "Dietary Information",
-        // itemImage: require("../assets/16.jpg"),
         type: "DESSERTS",
         Diet: "Dietary Information",
       },
     ],
   },
-  
 ];

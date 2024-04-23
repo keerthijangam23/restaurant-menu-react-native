@@ -66,10 +66,6 @@ export default function SectionListMenuData() {
   );
 }
 const styles = StyleSheet.create({
-  // container: {
-  //   width: 380,
-  //   flex: 1,
-  // },
   card: {
     display: "flex",
     flexDirection: "row",
@@ -79,7 +75,6 @@ const styles = StyleSheet.create({
     Width: 400,
     height: 90,
     margin: 10,
-    // backgroundColor: "pink",
   },
   itemName: {
     color: "rgb(133 ,77 ,14)",
@@ -101,7 +96,6 @@ const styles = StyleSheet.create({
     height: 90,
     marginRight: 10,
     borderRadius: 10,
-    // flexShrink: 1,
   },
   diet: {
     textDecorationLine: "underline",
@@ -117,7 +111,6 @@ const styles = StyleSheet.create({
   innerContainer: {
     flexShrink: 1,
     width: 280,
-    // backgroundColor: "blue",
   },
   tabBar: {
     backgroundColor: "#fff",

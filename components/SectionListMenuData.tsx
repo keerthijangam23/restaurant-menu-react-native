@@ -1,57 +1,77 @@
 import React from "react";
-import { ScrollView, StyleSheet, Text, View, Image } from "react-native";
+import { Text, View, Image } from "react-native";
 import { MenuData } from "../StaticData/MenuData";
 import SectionList from "react-native-tabs-section-list/lib/SectionList";
+import { SectionListMenuDataStyles } from "../styles/SectionListMenuDataStyles";
 export default function SectionListMenuData() {
   return (
     <SectionList
       sections={MenuData}
       renderItem={({ item }) => (
-        <View style={styles.card}>
+        <View style={SectionListMenuDataStyles.card}>
           {item.type !== "APPETIZERS" && item.itemImage ? (
-            <Image style={styles.itemImage} source={item.itemImage} />
+            <Image
+              style={SectionListMenuDataStyles.itemImage}
+              source={item.itemImage}
+            />
           ) : null}
 
-          <View style={styles.innerContainer}>
-            <View style={styles.newImageFoodnameConatiner}>
+          <View style={SectionListMenuDataStyles.innerContainer}>
+            <View style={SectionListMenuDataStyles.newImageFoodnameConatiner}>
               {item.newImage ? (
-                <Image style={styles.newImage} source={item.newImage} />
+                <Image
+                  style={SectionListMenuDataStyles.newImage}
+                  source={item.newImage}
+                />
               ) : null}
-              <Text style={styles.itemName}>{item.itemName}</Text>
+              <Text style={SectionListMenuDataStyles.itemName}>
+                {item.itemName}
+              </Text>
             </View>
             {item.description ? (
-              <Text style={styles.description}>{item.description}</Text>
+              <Text style={SectionListMenuDataStyles.description}>
+                {item.description}
+              </Text>
             ) : null}
             {item.type == "APPETIZERS" && item.Diet ? (
-              <Text style={styles.diet}>{item.Diet}</Text>
+              <Text style={SectionListMenuDataStyles.diet}>{item.Diet}</Text>
             ) : null}
             {item.complimentary ? (
-              <Text style={styles.complimentary}>{item.complimentary}</Text>
+              <Text style={SectionListMenuDataStyles.complimentary}>
+                {item.complimentary}
+              </Text>
             ) : null}
           </View>
 
-          <Text style={styles.price}>{item.price}</Text>
+          <Text style={SectionListMenuDataStyles.price}>{item.price}</Text>
         </View>
       )}
       renderSectionHeader={({ section }) => (
         <View>
-          <Text style={styles.foodTitle}>{section.title.toUpperCase()}</Text>
+          <Text style={SectionListMenuDataStyles.foodTitle}>
+            {section.title.toUpperCase()}
+          </Text>
           {section.title == "Appetizers" ? (
-            <Text style={styles.caption}>Our local menu changes daily</Text>
+            <Text style={SectionListMenuDataStyles.caption}>
+              Our local menu changes daily
+            </Text>
           ) : null}
         </View>
       )}
       keyExtractor={(item) => item.itemName}
       stickySectionHeadersEnabled={false}
       scrollToLocationOffset={50}
-      tabBarStyle={styles.tabBar}
+      tabBarStyle={SectionListMenuDataStyles.tabBar}
       renderTab={({ title, isActive }) => (
         <View
-          style={[styles.tabContainer, { borderBottomWidth: isActive ? 1 : 0 }]}
+          style={[
+            SectionListMenuDataStyles.tabContainer,
+            { borderBottomWidth: isActive ? 1 : 0 },
+          ]}
         >
           <Text
             style={[
-              styles.tabText,
+              SectionListMenuDataStyles.tabText,
               {
                 color: isActive ? "rgb(239 68 68)" : "black",
                 backgroundColor: isActive ? "rgb(254 242 242)" : "white",
@@ -65,81 +85,3 @@ export default function SectionListMenuData() {
     />
   );
 }
-const styles = StyleSheet.create({
-  card: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    flexShrink: 1,
-    marginBottom: 20,
-    Width: 400,
-    height: 90,
-    margin: 10,
-  },
-  itemName: {
-    color: "rgb(133 ,77 ,14)",
-  },
-  foodTitle: {
-    alignSelf: "center",
-    fontSize: 20,
-    fontWeight: "400",
-    color: "red",
-    margin: 5,
-  },
-  caption: {
-    alignSelf: "center",
-    marginBottom: 10,
-    fontStyle: "italic",
-  },
-  itemImage: {
-    width: 100,
-    height: 90,
-    marginRight: 10,
-    borderRadius: 10,
-  },
-  diet: {
-    textDecorationLine: "underline",
-    color: "rgb(107,114,128)",
-  },
-  price: {
-    width: 45,
-    flexShrink: 1,
-    textAlign: "right",
-    color: "rgb(133 ,77 ,14)",
-    marginRight: 20,
-  },
-  innerContainer: {
-    flexShrink: 1,
-    width: 280,
-  },
-  tabBar: {
-    backgroundColor: "#fff",
-    borderBottomColor: "#f4f4f4",
-    borderBottomWidth: 1,
-  },
-  tabContainer: {
-    borderBottomColor: "rgb(239 68 68)",
-  },
-  tabText: {
-    padding: 15,
-    color: "#9e9e9e",
-    fontSize: 18,
-    fontWeight: "400",
-  },
-  complimentary: {
-    color: "rgb(107, 114, 128)",
-  },
-  description: {
-    fontStyle: "italic",
-    fontFamily: "serif",
-  },
-  newImage: {
-    width: 20,
-    height: 10,
-    marginTop: 5,
-  },
-  newImageFoodnameConatiner: {
-    display: "flex",
-    flexDirection: "row",
-  },
-});
